@@ -3,7 +3,7 @@ const ArtistName = ({ artistName }) => {
     <div>
       Artist: {artistName}
     </div>
-  )
-}
+  );
+};
 
 export default ArtistName;

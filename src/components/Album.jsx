@@ -1,5 +1,6 @@
 import React from 'react';
 import ArtistName from './ArtistName';
+import AlbumName from './AlbumName';
 
 const Album = ({ albumData }) => {
   console.log(albumData);
@@ -11,6 +12,7 @@ const Album = ({ albumData }) => {
           key={album.id}
         >
           <ArtistName artistName={album.artists[0].name} />
+          <AlbumName albumName={album.name} />
         </div>
       ))}
     </div>
