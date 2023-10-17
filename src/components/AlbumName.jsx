@@ -1,6 +1,6 @@
 const AlbumName = ({ albumName }) => {
   return (
-    <div>
+    <div className="album-name">
       Album: {albumName}
     </div>
   );

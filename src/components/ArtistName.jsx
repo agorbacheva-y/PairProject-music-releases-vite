@@ -1,6 +1,6 @@
 const ArtistName = ({ artistName }) => {
   return (
-    <div>
+    <div className="artist-name">
       Artist: {artistName}
     </div>
   );

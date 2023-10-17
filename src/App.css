@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
+  font-size: 14px;
+  background-color: black;
+  color: #ffffff;
+}
+
+/*
+desktop: 1440 x 810
+tablet: 768 x 1024
+mobile: 320 x 568
+*/
