@@ -1,6 +1,8 @@
-import React from 'react';
 import ArtistName from '../ArtistName';
 import AlbumName from '../AlbumName';
+import PropTypes from 'prop-types';
+
+
 import './Album.css'
 
 const Album = ({ albumData }) => {
@@ -20,5 +22,10 @@ const Album = ({ albumData }) => {
     </div>
   );
 };
+
+Album.propTypes = {
+  albumData: PropTypes.string.isRequired,
+};
+
 
 export default Album;
