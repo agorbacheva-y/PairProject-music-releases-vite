@@ -11,6 +11,15 @@ body {
   color: #ffffff;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 20px;
+}
+
 /*
 desktop: 1440 x 810
 tablet: 768 x 1024
