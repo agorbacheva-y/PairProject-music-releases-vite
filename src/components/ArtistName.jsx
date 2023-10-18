@@ -3,11 +3,14 @@ const ArtistName = ({ artistName }) => {
 
   return (
     <div className="artist-name">
-      {artistName.map(({ i, name }) => (
+      
+      {artistName.map(( artists, index ) => (
         <span
-          key={i}
+          key={artists.id}
         >
-          {name} {i > (artistName.length-1) ? " & " : ""}
+          {artists.name}
+          {index > (artists.length - 1) ? " & " : "" }
+          
         </span>
       ))}
     </div>
