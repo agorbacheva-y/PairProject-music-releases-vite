@@ -2,15 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  justify-content: center;
 }
 
 .album {
   width: 300px;
+  line-height: 25px;
 }
 
 .album-cover > img {
   width: 300px;
-  
 }
 
 .album-name {
