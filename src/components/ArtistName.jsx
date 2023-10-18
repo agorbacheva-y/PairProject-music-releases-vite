@@ -9,7 +9,7 @@ const ArtistName = ({ artistName }) => {
           key={artists.id}
         >
           {artists.name}
-          {index > (artists.length - 1) ? " & " : "" }
+          {index < artistName.length -1 ? " & " : "" }
           
         </span>
       ))}
