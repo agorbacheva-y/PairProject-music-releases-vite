@@ -7,6 +7,8 @@ import './Album.css'
 const Album = ({ albumData }) => {
   console.log(albumData);
 
+  const artistName = albumData.artists;
+
   return (
     <div className='album-container'>
       {albumData.map((album) => (
@@ -16,7 +18,7 @@ const Album = ({ albumData }) => {
         >
           <AlbumCover albumCover={album.images[0].url} />
           <AlbumName albumName={album.name} />
-          <ArtistName artistName={album.artists[0].name} />
+          <ArtistName artistName={album.artists} />
         </div>
       ))}
     </div>
