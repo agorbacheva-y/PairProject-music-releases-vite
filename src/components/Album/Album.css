@@ -10,8 +10,19 @@
   line-height: 25px;
 }
 
+.album-cover {
+}
+
 .album-cover > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.overlay {
   width: 300px;
+  opacity: 50%;
+  background-color: black;
 }
 
 .album-name {
