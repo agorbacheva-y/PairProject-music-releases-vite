@@ -5,22 +5,31 @@ const AlbumCover = ({ albumCover }) => {
   // state for showing hover overlay
   const [showOverlay, setShowOverlay ] = useState(false);
 
-  const handleHover = () => {
+  const handleOnHover = () => {
+    setShowOverlay(true);
+  };
+
+  const handleOffHover = () => {
     setShowOverlay(false);
   }
 
   return (
-    <div className="album-cover" onMouseOver={handleHover}>
-      <img src={albumCover} alt="album cover" />
+    <>
+      <div className="album-cover" onMouseOver={handleOnHover} onMouseOut={handleOffHover}>
+        <img src={albumCover} alt="album cover" />
 
-      <div>
-        {showOverlay && (
-          <Overlay />
-        )}
+        <div className="overlay-container">
+          {showOverlay && (
+            <Overlay />
+          )}
+        </div>
 
       </div>
-    </div>
+    </>
+    
   )
 }
 
 export default AlbumCover
+
+// fix css to show overlay on top of img 
