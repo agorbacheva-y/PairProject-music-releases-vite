@@ -20,17 +20,34 @@
   object-fit: fill;
 }
 
-.overlay {
+.overlay-container {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  display: flex;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
   transition: 2s ease;
   background-color: black;
   opacity: 0.7;
+}
+
+.heart {
+  width: 9%;
+}
+
+.play {
+  width: 13%;
+}
+
+.dots {
+  width: 9%;
 }
 
 .album-name {
@@ -39,13 +56,4 @@
 
 .artist-name {
   color: #a0a0a0;
-}
-
-.heart {
-  fill: white;
-  width: 100%;
-}
-
-.play {
-  fill: white;
 }
