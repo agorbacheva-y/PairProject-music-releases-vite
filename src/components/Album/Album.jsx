@@ -2,7 +2,7 @@ import ArtistName from '../ArtistName';
 import AlbumName from '../AlbumName';
 import AlbumCover from '../AlbumCover';
 import PropTypes from 'prop-types';
-
+import heart from "..../assets/icons/heart.svg";
 
 import './Album.css'
 

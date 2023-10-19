@@ -40,3 +40,12 @@
 .artist-name {
   color: #a0a0a0;
 }
+
+.heart {
+  fill: white;
+  width: 100%;
+}
+
+.play {
+  fill: white;
+}
