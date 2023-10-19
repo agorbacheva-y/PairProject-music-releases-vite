@@ -5,16 +5,13 @@ const ArtistName = ({ artistName }) => {
 
   return (
     <div className="artist-name">
-      
-      {artistName.map(( artists, index ) => (
-        <span
-          key={artists.id}
-        >
-          {artists.name}
-          {index < artistName.length -1 ? ", " : "" }
-          
-        </span>
-      ))}
+      {artistName.map(( artists, index ) => {
+        if (index < artistName.length -1)
+        return artists.name + " & "
+        
+        return 
+    }
+      )}
     </div>
   );
 };
@@ -24,3 +21,13 @@ ArtistName.propTypes = {
 };
 
 export default ArtistName;
+
+// {artistName.map(( artists, index ) => (
+//   <span
+//     key={artists.id}
+//   >
+//     {artists.name}
+//     {index < artistName.length -1 ? " & " : "" }
+    
+//   </span>
+// ))}
