@@ -73,6 +73,16 @@
   font-weight: 700;
 }
 
+.album-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .artist-name {
   color: #a0a0a0;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
