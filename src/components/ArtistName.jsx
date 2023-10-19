@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const ArtistName = ({ artistName }) => {
   console.log(artistName);
 
@@ -15,6 +17,10 @@ const ArtistName = ({ artistName }) => {
       ))}
     </div>
   );
+};
+
+ArtistName.propTypes = {
+  artistName: PropTypes.string.isRequired
 };
 
 export default ArtistName;
