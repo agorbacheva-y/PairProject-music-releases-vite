@@ -5,9 +5,15 @@ import dots from "../assets/icons/dots.svg";
 const Overlay = () => {
   return (
     <div className='overlay'>
-      <img src={heart} className="heart"/>
-      <img src={play} className="play" />
-      <img src={dots} className="dots" />
+      <button className="heart">
+        <img src={heart} />
+      </button>
+      <button className="play" >
+        <img src={play} />
+      </button>
+      <button className="dots">
+        <img src={dots} />
+      </button>
     </div>
   );
 };
