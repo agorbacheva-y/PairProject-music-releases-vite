@@ -1,21 +1,29 @@
 import ArtistName from '../ArtistName';
 import AlbumName from '../AlbumName';
+import AlbumCover from '../AlbumCover';
 import PropTypes from 'prop-types';
 
 
-import './Album.css';
+import './Album.css'
 
-//Export 
-export const Album = ({ albumData }) => { //Defining a functional React component, using album as prop (object containing information about an album)
-  console.log(albumData)
-  const { name, external_urls, artists } = albumData; //Destructuring
+const Album = ({ albumData }) => {
+  console.log(albumData);
 
-  //Rendering JSX. Creating structure of how the album information should be displayed/order.
+  const artistName = albumData.artists;
+
   return (
-      <div className="album-container">
-          <AlbumName albumName={name} albumURL={external_urls.spotify} />
-          <ArtistName artists={artists} />
-      </div>
+    <div className='album-container'>
+      {albumData.map((album) => (
+        <div
+          key={album.id}
+          className='album'
+        >
+          <AlbumCover albumCover={album.images[0].url} />
+          <AlbumName albumName={album.name} />
+          <ArtistName artistName={album.artists} />
+        </div>
+      ))}
+    </div>
   );
 }
 

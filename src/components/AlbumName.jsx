@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const AlbumName = ({ albumName }) => {
   return (
     <div className="album-name">
-      Album: {albumName}
+      {albumName}
     </div>
   );
 };

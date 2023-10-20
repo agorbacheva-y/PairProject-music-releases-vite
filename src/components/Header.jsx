@@ -1,9 +1,10 @@
-//Export
-export const Header = () => {
-    return (
-        <div className="header">
-            <h1 className="header">New albums & singles</h1>
-            <p className="header">Technigo React Project</p>
-        </div>
-    );
+const Header = () => {
+  return (
+    <div className="header">
+      <h1>New Albums & Singles</h1>
+      <p>Technigo Week 4 - Pair Project</p>
+    </div>
+  )
 }
+
+export default Header

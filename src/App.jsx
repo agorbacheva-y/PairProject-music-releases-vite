@@ -12,11 +12,8 @@ export const App = () => {
   return (
     <>
       <Header />
-      <section className="album-wrapper">
-        {albumData.map((album) => ( //Mapping over the albums array.
-          <Album album={album} key={album.id} /> //Renders Album component for each album, passes the album data as a prop and assigns a unique key.
-        ))}
-      </section>
+      <Album albumData={albumData}/>
     </>
+   
   );
 };
