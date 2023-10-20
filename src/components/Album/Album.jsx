@@ -8,7 +8,7 @@ import './Album.css'
 const Album = ({ albumData }) => {
   console.log(albumData);
 
-  const artistName = albumData.artists;
+  //const artistName = albumData.artists;
 
   return (
     <div className='album-container'>
@@ -18,8 +18,8 @@ const Album = ({ albumData }) => {
           className='album'
         >
           <AlbumCover albumCover={album.images[0].url} />
-          <AlbumName albumName={album.name} />
-          <ArtistName artistName={album.artists} />
+          <AlbumName albumName={album.name} albumURL={album.external_urls.spotify} />
+          <ArtistName artistName={album.artists} externalURL={album.artists[0].external_urls.spotify} />
           
         </div>
       ))}

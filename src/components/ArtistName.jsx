@@ -1,24 +1,28 @@
 import PropTypes from 'prop-types';
 
-const ArtistName = ({ artistName }) => {
+const ArtistName = ({ artistName, externalURL  }) => {
   console.log(artistName);
 
   return (
     <div className="artist-name">
       {artistName.map(( artists, index ) => (
-        <span
-          key={artists.id}
-        >
+        <a
+        key={artists.id}
+        href={externalURL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
           {artists.name}
           {index < artistName.length -1 ? " & " : "" }
-        </span>
+        </a>
       ))}
     </div>
   );
 };
 
 ArtistName.propTypes = {
-  artistName: PropTypes.string.isRequired
+  artistName: PropTypes.string.isRequired,
+  externalURL: PropTypes.string.isRequired,
 };
 
 export default ArtistName;
