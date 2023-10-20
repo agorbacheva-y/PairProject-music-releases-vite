@@ -3,7 +3,6 @@ import AlbumName from '../AlbumName';
 import AlbumCover from '../AlbumCover';
 import PropTypes from 'prop-types';
 
-
 import './Album.css'
 
 const Album = ({ albumData }) => {
@@ -21,6 +20,7 @@ const Album = ({ albumData }) => {
           <AlbumCover albumCover={album.images[0].url} />
           <AlbumName albumName={album.name} />
           <ArtistName artistName={album.artists} />
+          
         </div>
       ))}
     </div>
