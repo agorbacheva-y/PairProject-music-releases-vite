@@ -17,7 +17,7 @@ const Album = ({ albumData }) => {
           key={album.id}
           className='album'
         >
-          <AlbumCover albumCover={album.images[0].url} />
+          <AlbumCover albumCover={album.images[0].url} albumURL={album.external_urls.spotify} />
           <AlbumName albumName={album.name} albumURL={album.external_urls.spotify} />
           <ArtistName artistName={album.artists} externalURL={album.artists[0].external_urls.spotify} />
           

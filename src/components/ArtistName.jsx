@@ -7,6 +7,7 @@ const ArtistName = ({ artistName, externalURL  }) => {
     <div className="artist-name">
       {artistName.map(( artists, index ) => (
         <a
+        style={{ textDecoration: 'none', color: 'white' }}
         key={artists.id}
         href={externalURL}
         target="_blank"

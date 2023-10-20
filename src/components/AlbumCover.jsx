@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Overlay from "./Overlay";
+import PropTypes from 'prop-types';
 
-const AlbumCover = ({ albumCover }) => {
+const AlbumCover = ({ albumCover, albumURL }) => {
   // state for showing hover overlay
   const [showOverlay, setShowOverlay ] = useState(false);
 
@@ -15,6 +16,11 @@ const AlbumCover = ({ albumCover }) => {
 
   return (
     <>
+    <a
+      href={albumURL}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className="album-cover" onMouseOver={handleOnHover} onMouseOut={handleOffHover}>
         <img src={albumCover} alt="album cover" />
 
@@ -25,11 +31,18 @@ const AlbumCover = ({ albumCover }) => {
         </div>
 
       </div>
+      </a>
     </>
     
   )
 }
 
-export default AlbumCover
+AlbumCover.propTypes = {
+  albumCover: PropTypes.string.isRequired,
+  albumURL: PropTypes.string.isRequired,
+};
+
+
+export default AlbumCover;
 
 // fix css to show overlay on top of img 
