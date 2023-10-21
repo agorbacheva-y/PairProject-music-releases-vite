@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const ArtistName = ({ artistName, externalURL  }) => {
   //console.log(artistName);
 
-  // Function to add '&' btwn artists if there are only 2 artists
+  // Function to add '&' between artists if there are only 2 artists
   // if there are >2 artists, show ',' between all artists 
   // except the last two which should have '&':
   const addCharacter = (index) => {
@@ -46,5 +46,5 @@ ArtistName.propTypes = {
 
 export default ArtistName;
 
-// Initial code to add '&' btwn artist names:
+// Initial code to add '&' between artist names:
 // index < artistName.length -1 ? " & " : "" 
