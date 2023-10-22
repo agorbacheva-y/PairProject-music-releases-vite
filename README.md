@@ -6,9 +6,9 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
+Pair Project: Ayumi Gorbacheva-Yamamoto and Olcay Tapan
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a music release web application that displays information about albums, singles, and popular playlists using data from an API.
 
 ## Getting Started with the Project
 
@@ -24,7 +24,7 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+To approach the problem, we initially planned the application's structure and user interface. We used React for the frontend and made API requests to fetch music data. We created components for Album as parent component of AlbumCover, AlbumName, ArtistName, Header, Overlay child components and passed data as props.
 
 ### View it live
 
